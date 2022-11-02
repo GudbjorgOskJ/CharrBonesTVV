@@ -16,11 +16,11 @@ library(hrbrthemes)
 
 ##If excel
 gogn<-read_excel("Master_sheetGOJ.xlsx", na="NA")
-gogn$date_net_set<-as.factor(gogn$date_net_set)
+gogn$date_net_set<-as.factor(gogn$date_net_set) # date have to be factors so testing can work below
 gogn$date_net_up<-as.factor(gogn$date_net_up)
 gogn$morph<-as.factor(gogn$morph)
 gogn$sex<-as.factor(gogn$sex)
-#gogn$age<-as.numeric(gogn$age)
+
 
 # Making a subset for each morph
 LB<-subset(gogn, morph=="LB")
@@ -151,7 +151,7 @@ gogn %>%
   dplyr::summarise(mean=mean(weight_g),sd=sd(weight_g), median = median(weight_g), count = n())
 
 
-ggplot(data=gogn, aes(x=morph, y=weight_g)) + geom_boxplot()
+ggplot(data=gogn, aes(x=morph, y=log(weight_g))) + geom_boxplot()
 
 ### Testing for differences between morphs
 testw1<-aov(log(weight_g) ~ morph, data = gogn)
@@ -190,7 +190,7 @@ TukeyHSD(test2)
 
 
 ## Mean Log Weight
-ggplot(data=gogn, aes(x=sex, y=weight_g)) + geom_boxplot()
+ggplot(data=gogn, aes(x=sex, y=log(weight_g))) + geom_boxplot()
 
 gogn %>% 
   dplyr::group_by(sex) %>% 
@@ -246,7 +246,7 @@ gogn %>%
   dplyr::group_by(morph, sex) %>% 
   dplyr::summarise(mean=mean(weight_g),sd=sd(weight_g), median = median(weight_g), count = n())
 
-ggplot(data=gogn, aes(x=morph, y=weight_g, fill=sex)) + geom_boxplot()
+ggplot(data=gogn, aes(x=morph, y=log(weight_g), fill=sex)) + geom_boxplot()
 
 ### Testing for differences between the sexes
 testw3<-aov(log(weight_g) ~ morph+sex, data = gogn)
