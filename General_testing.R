@@ -20,12 +20,8 @@ gogn$date_net_set<-as.factor(gogn$date_net_set)
 gogn$date_net_up<-as.factor(gogn$date_net_up)
 gogn$morph<-as.factor(gogn$morph)
 gogn$sex<-as.factor(gogn$sex)
-gogn$age<-as.numeric(gogn$age)
+#gogn$age<-as.numeric(gogn$age)
 
-
-## Futher preperation
-# Removing individuals without age data and making that is own datasheet
-gogn1<- gogn[!is.na(gogn$age),]
 
 # Making a subset for each morph
 LB<-subset(gogn, morph=="LB")
