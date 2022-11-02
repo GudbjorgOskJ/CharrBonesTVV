@@ -22,14 +22,11 @@ gogn$morph<-as.factor(gogn$morph)
 gogn$sex<-as.factor(gogn$sex)
 #gogn$age<-as.numeric(gogn$age)
 
-
 # Making a subset for each morph
 LB<-subset(gogn, morph=="LB")
 PI<-subset(gogn, morph=="PI")
 PL<-subset(gogn, morph=="PL")
 SB<-subset(gogn, morph=="SB")
-
-
 
 ### To look for outliers
 ggplot(gogn, aes(x=log(length_cm), y=log(weight_g), color=morph)) +
@@ -45,6 +42,8 @@ table(gogn$sex)
 table(gogn$morph, gogn$sex)
 
 ####### Effect of fishing day #############
+### Results for this part not shown in paper.
+### Should we just remove this part of the script for publishing
 
 table(gogn$morph, gogn$date_net_set)
 
@@ -109,8 +108,9 @@ testdaPI<-aov(age ~ date_net_set, data = PI)
 anova(testdaPI)
 TukeyHSD(testdaPI)
 
-
+##########################################################################
 ####### Length, weight and age differences in the population ############
+#########################################################################
 ###### All fishes together ######
 
 ##Length 
@@ -144,7 +144,7 @@ anova(test1)
 TukeyHSD(test1)
 
 
-#Mean Weight
+#Mean Log Weight
 
 gogn %>% 
   dplyr::group_by(morph) %>% 
@@ -189,7 +189,7 @@ anova(test2)
 TukeyHSD(test2)
 
 
-#Mean Weight
+## Mean Log Weight
 ggplot(data=gogn, aes(x=sex, y=weight_g)) + geom_boxplot()
 
 gogn %>% 
@@ -202,7 +202,7 @@ anova(testw2)
 TukeyHSD(testw2)
 
 
-# Mean age
+## Mean age
 
 gogn %>% 
   dplyr::group_by(sex) %>% 
@@ -217,7 +217,7 @@ TukeyHSD(testa2)
 
 
 
-######## Sexual dimorphism within morphs #######
+######## Sexual dimorphism within morphs ########
 
 # Length
 gogn %>% 
@@ -233,7 +233,10 @@ test4<-aov(length_cm ~ morph*sex, data = gogn)
 anova(test2, test3)
 anova(test3,test4)
 #Test 3 (morph + sex), best test
+summary(test3)
 TukeyHSD(test3)
+
+summary(test4)
 TukeyHSD(test4)
 
 
@@ -255,6 +258,7 @@ anova(testw3, testw4)
 
 summary(testw3)
 TukeyHSD(testw3)
+summary(testw4)
 TukeyHSD(testw4)
 
 # Mean age
@@ -273,6 +277,34 @@ anova(testa2,testa3)
 anova(testa3,testa4)
 #Test 4 (morph*sex), best test
 
+summary(testa3)
+TukeyHSD(testa3)
 summary(testa4)
 TukeyHSD(testa4)
+
+
+#########################################################################
+################### Images preparation ##################################
+
+###By morph###
+m3<-ggplot(gogn, aes(x=age, fill=morph, col=morph)) +  geom_bar(alpha=0.5, position="identity")+ labs(x="Age", y="Count", fill="Morph")+  guides(fill = "none")+ facet_grid(morph ~ .) + guides(col = "none") + scale_color_manual(values=c("#00BA38","magenta4","#F8766D","#00BFC4")) + scale_fill_manual(values = c("#00BA38","magenta4","#F8766D","#00BFC4")) + theme_bw()
+ml<-ggplot(gogn, aes(y= length_cm, x = morph, fill = morph)) + geom_boxplot() + labs(y="Length (cm)", x="Morph", fill="Morph") + guides(fill = "none")+ scale_fill_manual(values=c("#00BA38","magenta4","#F8766D","#00BFC4")) + coord_flip() + geom_jitter(width=0.1,alpha=0.3)+ theme_bw()+ scale_x_discrete(limits=c("SB", "PL", "PI", "LB"))
+mw<-ggplot(gogn, aes(y= log(weight_g), x = morph, fill = morph)) + geom_boxplot() + labs(y="Log Weight (g)", x="Morph", fill="Morph")+ guides(fill = "none") + scale_fill_manual(values=c("#00BA38","magenta4","#F8766D","#00BFC4")) + coord_flip() + geom_jitter(width=0.1,alpha=0.3)+ theme_bw()+ scale_x_discrete(limits=c("SB", "PL", "PI", "LB"))
+
+png("6ages.png")
+multiplot(m3,ml,mw, layout = matrix(c(1,2,3) ,nrow = 1,byrow = T))
+dev.off()
+
+## By morph by sex ###
+mmsa<-ggplot(gogn, aes(x=age, fill=morph, col=morph)) +  geom_bar(alpha=0.5, position="identity")+ labs(x="Age", y="Count", fill="Morph")+  guides(fill = "none")+ facet_grid(morph ~ sex) + guides(col = "none") + scale_color_manual(values=c("#00BA38","magenta4","#F8766D","#00BFC4")) + scale_fill_manual(values = c("#00BA38","magenta4","#F8766D","#00BFC4")) + theme_bw()
+mmsl<-ggplot(gogn, aes(y= length_cm, x = morph, fill = sex)) + geom_boxplot() + labs(y="Length (cm)", x="Morph", fill="Sex") + guides(fill = "none")+ scale_fill_manual(values=c("#FF0066", "#3300FF")) + coord_flip() + geom_jitter(width=0.1,alpha=0.3)+ theme_bw()+ scale_x_discrete(limits=c("SB", "PL", "PI", "LB"))
+mmsw<-ggplot(gogn, aes(y= log(weight_g), x = morph, fill = sex)) + geom_boxplot() + labs(y="Log Weight (g)", x="Morph", fill="Sex")+ guides(fill = "none") + scale_fill_manual(values=c("#FF0066", "#3300FF")) + coord_flip() + geom_jitter(width=0.1,alpha=0.3)+ theme_bw()+ scale_x_discrete(limits=c("SB", "PL", "PI", "LB"))
+
+png("morphsex.png")
+multiplot(mmsa,mmsl,mmsw, layout = matrix(c(1,2,3) ,nrow = 1,byrow = T))
+dev.off()
+
+
+
+
 
