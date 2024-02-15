@@ -1,3 +1,9 @@
+This dataseries comes from a study on Arctic charr diversity.
+Title: ‚ÄúDiversity in the internal functional feeding elements of sympatric morphs of Arctic charr (Salvelinus alpinus)‚Äù
+Doi: https://doi.org/10.1101/2023.02.17.528955
+Author: Gu√∞bj√∂rg √ìsk J√≥nsd√≥ttir (https://orcid.org/0009-0008-0502-5553), Laura-Marie von Elm, Finnur Ingimarsson (https://orcid.org/0000-0002-0815-7622), Samuel Tersigni, Sigur√∞ur Sveinn Snorrason, Arnar P√°lsson (https://orcid.org/0000-0002-6525-8112), Sarah Elizabeth Steele (https://orcid.org/0000-0001-8404-5537). 
+Status: Considered for publication in PLoS One
+
 Readme about the csv files.
 Below is information on all csv. files within this repository.
 All files contain information on the same individuals however files do contain different subsets.
@@ -13,11 +19,11 @@ Explanation of variables (columns).
 id_me = id-tags used for this analysis. Each individual had their own id-tag.
 id_Hafro = id-tags used by collaborates as some individuals were shared between this project and other projects.
 id_marina = id-tags used by collaborates as some individuals were shared between this project and other projects. Note on some figures individuals are still tagged with this tagging scheme. 
-location = name of the location, within lake ﬁingvallavatn, where nets (which caught this particular individual) were set.
+location = name of the location, within lake √ûingvallavatn, where nets (which caught this particular individual) were set.
 date_net_set = the date (D/M/Y) when nets were set into the lake.
 date_net_up = the date (D/M/Y) when nets were taken out of the lake.
 species = factor variable. The species of each individual used in this analysis. Artic charr is labeled as B (Icelandic work for arctic charr is bleikja).
-morph = factor variable. If individual was arctic charr they would be classified into one of the four charr eco-morph from lake ﬁingvallavatn. LB = large benthivorous charr, SB= small benthivorous charr, PL= planktivorous charr, PI = piscivorous charr.
+morph = factor variable. If individual was arctic charr they would be classified into one of the four charr eco-morph from lake √ûingvallavatn. LB = large benthivorous charr, SB= small benthivorous charr, PL= planktivorous charr, PI = piscivorous charr.
 length_cm = Fork length measurements (in centimeters, cm) for each individual.
 weight_g = the weight of each individual, measured in grams, g.
 sex = factor variable. The biological sex of each individual. F stands for female and M stands for male.
@@ -40,13 +46,13 @@ id_me = id-tags used for this analysis. Each individual had their own id-tag.
 id_Hafro = id-tags used by collaborates as some individuals were shared between this project and other projects.
 id_marina = id-tags used by collaborates as some individuals were shared between this project and other projects. Note on some figures individuals are still tagged with this tagging scheme. 
 species = factor variable. The species of each individual used in this analysis. Artic charr is labeled as B (Icelandic work for arctic charr is bleikja).
-morph = factor variable. If individual was arctic charr they would be classified into one of the four charr eco-morph from lake ﬁingvallavatn. LB = large benthivorous charr, SB= small benthivorous charr, PL= planktivorous charr, PI = piscivorous charr.
+morph = factor variable. If individual was arctic charr they would be classified into one of the four charr eco-morph from lake √ûingvallavatn. LB = large benthivorous charr, SB= small benthivorous charr, PL= planktivorous charr, PI = piscivorous charr.
 length_cm = Fork length measurements (in centimeters, cm) for each individual.
 weight_g = the weight of each individual, measured in grams, g.
 sex = factor variable. The biological sex of each individual. F stands for female and M stands for male.
 mat = Maturity index, on a scale from 0 to 7, where highest value were given to individuals with running gametes
 age = the age (in years) of each individual.
-location = name of the location, within lake ﬁingvallavatn, where nets (which caught this particular individual) were set.
+location = name of the location, within lake √ûingvallavatn, where nets (which caught this particular individual) were set.
 old_image_name = Older name of images used during analysis. These older names are used in the Articular_Angular_LM.tps file.
 new_image_name = Current names of images, as seen on Figshare
 teeth_den = Average number of teeth for the dentary bones, per individual. Left bone teeth count and right bone teeth count were combined and divided by two.
@@ -63,13 +69,13 @@ id_me = id-tags used for this analysis. Each individual had their own id-tag.
 id_Hafro = id-tags used by collaborates as some individuals were shared between this project and other projects.
 id_marina = id-tags used by collaborates as some individuals were shared between this project and other projects. Note on some figures individuals are still tagged with this tagging scheme. 
 species = factor variable. The species of each individual used in this analysis. Artic charr is labeled as B (Icelandic work for arctic charr is bleikja).
-morph = factor variable. If individual was arctic charr they would be classified into one of the four charr eco-morph from lake ﬁingvallavatn. LB = large benthivorous charr, SB= small benthivorous charr, PL= planktivorous charr, PI = piscivorous charr.
+morph = factor variable. If individual was arctic charr they would be classified into one of the four charr eco-morph from lake √ûingvallavatn. LB = large benthivorous charr, SB= small benthivorous charr, PL= planktivorous charr, PI = piscivorous charr.
 length_cm = Fork length measurements (in centimeters, cm) for each individual.
 weight_g = the weight of each individual, measured in grams, g.
 sex = factor variable. The biological sex of each individual. F stands for female and M stands for male.
 mat = Maturity index, on a scale from 0 to 7, where highest value were given to individuals with running gametes
 age = the age (in years) of each individual.
-location = name of the location, within lake ﬁingvallavatn, where nets (which caught this particular individual) were set.
+location = name of the location, within lake √ûingvallavatn, where nets (which caught this particular individual) were set.
 old_image_name = Older name of images used during analysis. These older names are used in the Dentary_LM.tps file.
 new_image_name = Current names of images, as seen on Figshare
 teeth_den = Average number of teeth for the dentary bones, per individual. Left bone teeth count and right bone teeth count were combined and divided by two.
@@ -86,13 +92,13 @@ id_me = id-tags used for this analysis. Each individual had their own id-tag.
 id_Hafro = id-tags used by collaborates as some individuals were shared between this project and other projects.
 id_marina = id-tags used by collaborates as some individuals were shared between this project and other projects. Note on some figures individuals are still tagged with this tagging scheme. 
 species = factor variable. The species of each individual used in this analysis. Artic charr is labeled as B (Icelandic work for arctic charr is bleikja).
-morph = factor variable. If individual was arctic charr they would be classified into one of the four charr eco-morph from lake ﬁingvallavatn. LB = large benthivorous charr, SB= small benthivorous charr, PL= planktivorous charr, PI = piscivorous charr.
+morph = factor variable. If individual was arctic charr they would be classified into one of the four charr eco-morph from lake √ûingvallavatn. LB = large benthivorous charr, SB= small benthivorous charr, PL= planktivorous charr, PI = piscivorous charr.
 length_cm = Fork length measurements (in centimeters, cm) for each individual.
 weight_g = the weight of each individual, measured in grams, g.
 sex = factor variable. The biological sex of each individual. F stands for female and M stands for male.
 mat = Maturity index, on a scale from 0 to 7, where highest value were given to individuals with running gametes
 age = the age (in years) of each individual.
-location = name of the location, within lake ﬁingvallavatn, where nets (which caught this particular individual) were set.
+location = name of the location, within lake √ûingvallavatn, where nets (which caught this particular individual) were set.
 old_image_name = Older name of images used during analysis. These older names are used in the Whole_Body_LM.tps and Head_LM.tps files.
 new_image_name = Current names of images, as seen on Figshare
 
@@ -103,13 +109,13 @@ id_me = id-tags used for this analysis. Each individual had their own id-tag.
 id_Hafro = id-tags used by collaborates as some individuals were shared between this project and other projects.
 id_marina = id-tags used by collaborates as some individuals were shared between this project and other projects. Note on some figures individuals are still tagged with this tagging scheme. 
 species = factor variable. The species of each individual used in this analysis. Artic charr is labeled as B (Icelandic work for arctic charr is bleikja).
-morph = factor variable. If individual was arctic charr they would be classified into one of the four charr eco-morph from lake ﬁingvallavatn. LB = large benthivorous charr, SB= small benthivorous charr, PL= planktivorous charr, PI = piscivorous charr.
+morph = factor variable. If individual was arctic charr they would be classified into one of the four charr eco-morph from lake √ûingvallavatn. LB = large benthivorous charr, SB= small benthivorous charr, PL= planktivorous charr, PI = piscivorous charr.
 length_cm = Fork length measurements (in centimeters, cm) for each individual.
 weight_g = the weight of each individual, measured in grams, g.
 sex = factor variable. The biological sex of each individual. F stands for female and M stands for male.
 mat = Maturity index, on a scale from 0 to 7, where highest value were given to individuals with running gametes
 age = the age (in years) of each individual.
-location = name of the location, within lake ﬁingvallavatn, where nets (which caught this particular individual) were set.
+location = name of the location, within lake √ûingvallavatn, where nets (which caught this particular individual) were set.
 old_image_name = Older name of images used during analysis. These older names are used in the Maxilla_LM.tps file.
 new_image_name = Current names of images, as seen on Figshare
 teeth_den = Average number of teeth for the dentary bones, per individual. Left bone teeth count and right bone teeth count were combined and divided by two.
@@ -127,13 +133,13 @@ id_me = id-tags used for this analysis. Each individual had their own id-tag.
 id_Hafro = id-tags used by collaborates as some individuals were shared between this project and other projects.
 id_marina = id-tags used by collaborates as some individuals were shared between this project and other projects. Note on some figures individuals are still tagged with this tagging scheme. 
 species = factor variable. The species of each individual used in this analysis. Artic charr is labeled as B (Icelandic work for arctic charr is bleikja).
-morph = factor variable. If individual was arctic charr they would be classified into one of the four charr eco-morph from lake ﬁingvallavatn. LB = large benthivorous charr, SB= small benthivorous charr, PL= planktivorous charr, PI = piscivorous charr.
+morph = factor variable. If individual was arctic charr they would be classified into one of the four charr eco-morph from lake √ûingvallavatn. LB = large benthivorous charr, SB= small benthivorous charr, PL= planktivorous charr, PI = piscivorous charr.
 length_cm = Fork length measurements (in centimeters, cm) for each individual.
 weight_g = the weight of each individual, measured in grams, g.
 sex = factor variable. The biological sex of each individual. F stands for female and M stands for male.
 mat = Maturity index, on a scale from 0 to 7, where highest value were given to individuals with running gametes
 age = the age (in years) of each individual.
-location = name of the location, within lake ﬁingvallavatn, where nets (which caught this particular individual) were set.
+location = name of the location, within lake √ûingvallavatn, where nets (which caught this particular individual) were set.
 old_image_name = Older name of images used during analysis. These older names are used in the Premaxilla_LM.tps file.
 new_image_name = Current names of images, as seen on Figshare
 teeth_den = Average number of teeth for the dentary bones, per individual. Left bone teeth count and right bone teeth count were combined and divided by two.
@@ -150,13 +156,13 @@ id_me = id-tags used for this analysis. Each individual had their own id-tag.
 id_Hafro = id-tags used by collaborates as some individuals were shared between this project and other projects.
 id_marina = id-tags used by collaborates as some individuals were shared between this project and other projects. Note on some figures individuals are still tagged with this tagging scheme. 
 species = factor variable. The species of each individual used in this analysis. Artic charr is labeled as B (Icelandic work for arctic charr is bleikja).
-morph = factor variable. If individual was arctic charr they would be classified into one of the four charr eco-morph from lake ﬁingvallavatn. LB = large benthivorous charr, SB= small benthivorous charr, PL= planktivorous charr, PI = piscivorous charr.
+morph = factor variable. If individual was arctic charr they would be classified into one of the four charr eco-morph from lake √ûingvallavatn. LB = large benthivorous charr, SB= small benthivorous charr, PL= planktivorous charr, PI = piscivorous charr.
 length_cm = Fork length measurements (in centimeters, cm) for each individual.
 weight_g = the weight of each individual, measured in grams, g.
 sex = factor variable. The biological sex of each individual. F stands for female and M stands for male.
 mat = Maturity index, on a scale from 0 to 7, where highest value were given to individuals with running gametes
 age = the age (in years) of each individual.
-location = name of the location, within lake ﬁingvallavatn, where nets (which caught this particular individual) were set.
+location = name of the location, within lake √ûingvallavatn, where nets (which caught this particular individual) were set.
 old_image_name = Older name of images used during analysis. These older names are used in the Quadrate_LM.tps file.
 new_image_name = Current names of images, as seen on Figshare
 teeth_den = Average number of teeth for the dentary bones, per individual. Left bone teeth count and right bone teeth count were combined and divided by two.
@@ -174,12 +180,12 @@ id_me = id-tags used for this analysis. Each individual had their own id-tag.
 id_Hafro = id-tags used by collaborates as some individuals were shared between this project and other projects.
 id_marina = id-tags used by collaborates as some individuals were shared between this project and other projects. Note on some figures individuals are still tagged with this tagging scheme. 
 species = factor variable. The species of each individual used in this analysis. Artic charr is labeled as B (Icelandic work for arctic charr is bleikja).
-morph = factor variable. If individual was arctic charr they would be classified into one of the four charr eco-morph from lake ﬁingvallavatn. LB = large benthivorous charr, SB= small benthivorous charr, PL= planktivorous charr, PI = piscivorous charr.
+morph = factor variable. If individual was arctic charr they would be classified into one of the four charr eco-morph from lake √ûingvallavatn. LB = large benthivorous charr, SB= small benthivorous charr, PL= planktivorous charr, PI = piscivorous charr.
 length_cm = Fork length measurements (in centimeters, cm) for each individual.
 weight_g = the weight of each individual, measured in grams, g.
 sex = factor variable. The biological sex of each individual. F stands for female and M stands for male.
 mat = Maturity index, on a scale from 0 to 7, where highest value were given to individuals with running gametes
 age = the age (in years) of each individual.
-location = name of the location, within lake ﬁingvallavatn, where nets (which caught this particular individual) were set.
+location = name of the location, within lake √ûingvallavatn, where nets (which caught this particular individual) were set.
 old_image_name = Older name of images used during analysis. These older names are used in the Supramaxilla_LM.tps file.
 new_image_name = Current names of images, as seen on Figshare
